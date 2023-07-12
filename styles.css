@@ -104,7 +104,7 @@ h2 {
 .graduation span {
   margin-left: auto;
 }
-.BAScience{
+.BAScience {
   text-align: left;
   font-size: 12px;
 }
@@ -112,10 +112,15 @@ h2 {
   text-align: left;
   font-size: 12px;
 }
-.Experience{
+.Experience {
   text-align: left;
   font-size: 22px;
 }
-
-
-
+.List {
+  text-align: left;
+  font-size: 12px;
+}
+.Covid {
+  text-align: left;
+  font-size: 12px;
+}
