@@ -40,14 +40,14 @@
           <button type="submit">Submit</button>
         </form>
       </div>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="path/to/smtp.js"></script>
       <script>
         function sendEmail() {
           Email.send({
             secureToken: "4ee9559c-2c4c-4c29-b5f0-f128d17eb06f",
             To: "zainsbusinessemail@gmail.com",
             From: document.getElementById("email").value,
-            Subject: "This is the subject",
+            Subject: "New Contact Form Enquiry",
             Body:
               "Name: " +
               document.getElementById("name").value +
