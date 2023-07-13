@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,44 +20,20 @@
     <section id="contact" class="section contact-section">
       <div class="section-inner">
         <h2>Contact Me</h2>
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <form id="contactForm">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="Email id" required />
-
-          <label for="message">Phone Number:</label>
-          <input type="number" id="phone" name="phone no." required />
+          <input type="email" id="email" name="email" required />
 
           <label for="message">Message:</label>
-          <textarea
-            id="message"
-            rows="5"
-            placeholder="How can I help you"
-          ></textarea>
+          <textarea id="message" name="message" rows="5"></textarea>
 
           <button type="submit">Submit</button>
         </form>
       </div>
-      <script src="path/to/smtp.js"></script>
-      <script>
-        function sendEmail() {
-          Email.send({
-            secureToken: "4ee9559c-2c4c-4c29-b5f0-f128d17eb06f",
-            To: "zainsbusinessemail@gmail.com",
-            From: document.getElementById("email").value,
-            Subject: "New Contact Form Enquiry",
-            Body:
-              "Name: " +
-              document.getElementById("name").value +
-              "<br>Phone Number: " +
-              document.getElementById("phone").value +
-              "<br>Message: " +
-              document.getElementById("message").value,
-          }).then((message) => alert("mail sent successfully"));
-        }
-      </script>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
