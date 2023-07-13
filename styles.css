@@ -124,3 +124,11 @@ h2 {
   text-align: left;
   font-size: 12px;
 }
+button{
+  font-size: 15px;
+  border: 0;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
